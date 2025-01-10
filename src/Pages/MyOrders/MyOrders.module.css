@@ -209,14 +209,14 @@ tr:hover{
     }
 }
 
-
+ 
 .delete{
-    color: red;
-    font-weight: bold;
-    background: transparent;
-    border-radius: 5px;
-    height: 5px;
-    aspect-ratio: 1.2/1;
+    color: aliceblue;
+    font-weight: 800 !important;
+    background: #f857069a !important;
+    border-radius: 50px;
+    aspect-ratio: 1/1;
+    padding: 0 !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,18 +224,21 @@ tr:hover{
 }
 
 .delete:hover{
-    background: rgba(255, 0, 0, 0.236);
+    background: #f85706 !important;
 }
 
 
 .edit{
     color: black !important;
     font-weight: bold;
-    background: transparent;
+    background: var(--yellow) !important;
     border-radius: 5px;
-    height: 5px;
-    aspect-ratio: 1.2/1;
+    aspect-ratio: 1/1;
+    padding: 0 5px !important;
+    height: 1rem;
+    aspect-ratio: 2/1;
     display: flex;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -245,12 +248,15 @@ tr:hover{
     background: rgba(0, 229, 255, 0.236);
 }
 .save{
-    color: #02f633;
+    color: aliceblue;
     font-weight: bold;
     background: transparent;
     border-radius: 5px;
-    height: 5px;
-    aspect-ratio: 1.2/1;
+    aspect-ratio: 1/1;
+    padding: 0 5px !important;
+    height: 1rem;
+    gap: 5px;
+    aspect-ratio: 2/1;
     display: flex;
     justify-content: center;
     align-items: center;

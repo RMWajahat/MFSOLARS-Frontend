@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "../../Pages/MyOrders/MyOrders.module.css";
 import axios from 'axios';
 import { format } from 'date-fns';
-import { AiOutlineClose } from 'react-icons/ai';
+import { MdDelete } from "react-icons/md";
 
 
 
@@ -112,7 +112,7 @@ const Order_Admin = () => {
                                 </td>
                                 <td data-label="Delete" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                     <button className={styles.delete} onClick={() => handleDeleteOrder(order._id)}>
-                                        <AiOutlineClose />
+                                        <MdDelete style={{fontSize:'1rem'}} />
                                     </button>
                                 </td>
                             </tr>))

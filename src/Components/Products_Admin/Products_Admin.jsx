@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../../Pages/MyOrders/MyOrders.module.css";
 import axios from 'axios';
-import { AiOutlineClose, AiOutlinePlus, AiOutlineSave } from 'react-icons/ai';
+import { AiOutlinePlus } from 'react-icons/ai';
+import { MdDelete } from "react-icons/md";
+import { FaEdit,FaSave } from "react-icons/fa";
+
+
 
 const Products_Admin = () => {
     const [Products, setProducts] = useState([]);
@@ -256,15 +260,15 @@ const Products_Admin = () => {
                             <td data-label="Update" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 {editingProductId === Product._id ? (
                                     <button className={styles.save} onClick={handleSaveChanges}>
-                                        <AiOutlineSave />
+                                        <FaSave style={{fontSize:"1rem", color:"blanchedalmond"}} /> Save
                                     </button>
                                 ) : (
                                     <button className={styles.edit} onClick={() => handleEditClick(Product)}>
-                                        Edit
+                                        <FaEdit style={{fontSize:"1rem"}}/>Edit
                                     </button>
                                 )}
                                 <button className={styles.delete} onClick={() => handleDeleteProduct(Product._id)}>
-                                    <AiOutlineClose />
+                                    <MdDelete style={{fontSize:'1rem'}} />
                                 </button>
                             </td>
 

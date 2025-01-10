@@ -32,7 +32,7 @@ function Login() {
       withCredentials: true,
     };
   
-    const url = `${API_URL}/mfsolars/v1/auth/${action}`;
+    const url = `${API_URL}/mfsolars/v1/auth/${action}`; 
   
     try {
       const response = await axios.post(url, formData, userConfig);
